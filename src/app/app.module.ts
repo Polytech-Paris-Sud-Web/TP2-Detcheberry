@@ -8,10 +8,12 @@ import { ArticlesComponent } from './articles/articles.component';
 import {ArticleService} from "./services/article.service";
 import { ArticleCreationComponent } from './article-creation/article-creation.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ArticleSearchComponent } from './article-search/article-search.component';
 
 const appRoutes: Routes = [
   { path: 'create', component: ArticleCreationComponent },
   { path: 'articles', component: ArticlesComponent },
+  { path: 'search', component: ArticleSearchComponent },
   { path: '', component: ArticlesComponent }
 ]
 
@@ -20,7 +22,8 @@ const appRoutes: Routes = [
     AppComponent,
     ArticleComponent,
     ArticlesComponent,
-    ArticleCreationComponent
+    ArticleCreationComponent,
+    ArticleSearchComponent
   ],
   imports: [
     RouterModule.forRoot(

@@ -1,0 +1,5 @@
+<input (keyup)="onKey($event)">
+<button (click)="search()">Rechercher!</button>
+<div *ngFor="let article of this.results() | async">
+    <app-article [article]="article" (deletedArticle)="delete($event)"></app-article>
+</div>
