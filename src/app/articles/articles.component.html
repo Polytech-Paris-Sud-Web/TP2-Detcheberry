@@ -1,0 +1,4 @@
+<a routerLink="/create" >Créer un nouveau article</a>
+<div *ngFor="let article of this.articles() | async">
+  <app-article  [article]="article" (deletedArticle)="delete($event)"></app-article>
+</div>
