@@ -11,6 +11,10 @@ First you need to run 'npm install'
 Then run on two different prompts :
 'ng serve'  'json-server --watch db.json'
 
+## Expliquer pourquoi la migration est interessante pour la suite du cours
+
+La mise à jour permet de corriger de nombreuses vulnérabiltés, ce qui est déjà un point crucial pour la sécurité de l'application. De plus, les maj permettent de passer outre les packages outdated, afin d'être sur de continuer un projet en utilisant des modules maintenus et documentés. Enfin, cela permet d'avoir accès aux nouvelles fonctionnalités. Toutefois, il faut faire attention à ne pas passer sur des versions trop récentes, qui pourraient être instable et manquer d'information.
+
 ## SimpleApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
